@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5d094f9336.js" crossorigin="anonymous"></script>
+    <title>Search Page</title>
+  </head>
+  <body>
+    <header>
+      <nav class="h-[10vh] w-full border border-black-500 flex justify-between items-center p-10 bg-black text-white">
+        <div class="h-full flex items-center space-x-4">
+          <ul class="flex space-x-4">
+            <li class="hover:bg-white hover:text-black p-3 rounded-md hover:cursor-pointer">
+              About
+            </li>
+            <li class="hover:bg-white hover:text-black p-3 rounded-md hover:cursor-pointer">
+              Store
+            </li>
+          </ul>
+        </div>
+        <div class="h-full flex items-center space-x-10">
+          <span class="hover:bg-white hover:text-black p-3 rounded-md hover:cursor-pointer">Gmail</span>
+          <span class="hover:bg-white hover:text-black p-3 rounded-md hover:cursor-pointer">Images</span>
+          <span><i class="fa-solid fa-flask fa-2x"></i></span>
+          <span><i class="fa-solid fa-box-archive fa-2x"></i></span>
+          <span><i class="fa-regular fa-user fa-2x"></i></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="h-[50vh] w-[100vw] flex justify-center items-center flex-col">
+        <img class="h-[120px] w-[370px]" src="Google_Child_Care_Assistance.png" alt="Google Logo"/>
+        <div >
+          <input class="w-[370px] p-3 ml-12 rounded-md border" type="text" id="text" name="search" placeholder="Search..." />
+          <button class="text-xl m-3" id="btn">
+            <i class="fa-solid fa-magnifying-glass "></i>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="flex">
+      <div id="result"></div>
+     
+      </div>
+    </footer>
+    <script src="Script.js"></script>
+  </body>
+</html>
